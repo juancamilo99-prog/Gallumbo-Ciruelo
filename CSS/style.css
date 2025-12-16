@@ -1,0 +1,110 @@
+:root{
+    --padding-document: 20px;
+    --color-ciruelo: #660066;
+    --principal-color: #FBF4E6;
+    --secondary-color: #7A1F3D;
+    --size-font: 15px;
+    --principal-font: "Inter", sans-serif;
+    --secondary-font: "Playfair Display", serif;
+    --weigth-font: 600;
+    --style-font: italic;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--principal-color);
+}
+/* HEADER STYLES */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--padding-document);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: transparent;
+    z-index: 1000;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.text-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-logo .ciruelo{
+    color: var(--color-ciruelo);
+}
+.header-logo img{
+    width: 70px;
+}
+
+/* NAVEGATION STYLES */
+
+.nav-home{
+    display: flex;
+    align-items: center;
+}
+
+.nav-home > nav > ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.nav-home > nav > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--principal-font);
+    font-weight: var(--weigth-font);
+    font-style:var(--style-font);
+    color: white;
+}
+
+/* MAIN */
+
+main > .ban {
+    height: 100vh;
+    background-image: url(/Assets/banner.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .content-text-main{
+    float: left;
+    margin-left: 5%;
+}
+
+main .text-main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+main .text-main .gallumbos{
+    text-align: center;
+    font-size: 70px;
+}
+
+main .text-main .ciruelo{
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 45px;
+    font-style: italic;
+    margin-top: -20px;
+    color: var(--color-ciruelo);
+}
+
+main .text-main .descripcion{
+    text-align: center;
+    font-size: 20px;
+}
