@@ -19,7 +19,7 @@ body{
 }
 /* HEADER STYLES */
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,6 +30,7 @@ header{
     background: transparent;
     z-index: 1000;
 }
+
 .header-logo{
     display: flex;
     align-items: center;
@@ -86,6 +87,7 @@ main .content-text-main{
 main .text-main{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 20px;
     margin-top: 100px;
 }
@@ -107,4 +109,607 @@ main .text-main .ciruelo{
 main .text-main .descripcion{
     text-align: center;
     font-size: 20px;
+}
+
+main .text-main .btn-coleccion{
+    color: var(--color-ciruelo);
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+main .text-aboutme{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--padding-document);
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: -90px;
+}
+main .about-me{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: var(--padding-document);
+    height: 90vh;
+}
+
+main .frase{
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 350px;
+}
+
+main .frase-two{
+    height: 400px;
+}
+ main .frase p{
+    padding: 0px 20px 0px 20px;
+    font-size: 20px;
+ }
+
+ main .frase h1{
+    margin-top: 15px;
+    font-family: "Passion One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+ }
+
+ .btn-coleccion{
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+ }
+
+ .btn-coleccion:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+ }
+
+ /*SECCION DE COLECCION*/
+
+ .text-aboutme .descubre{
+    color: var(--secondary-color);
+ }
+
+ main .colection{
+    display: flex;
+    padding: var(--padding-document);
+    gap: 60px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+ }
+
+ .card{
+    width: 300px;
+    height: 250px;
+    background: white;
+    padding: 5px;
+    border-radius: 6px;
+ }
+
+ .card-image img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+ }
+
+ .card-image:hover{
+    transform: scale(0.98);
+ }
+
+ .category{
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    padding: 10px 7px 0;
+    text-align: center;
+ }
+ 
+ .category:hover{
+    cursor: pointer;
+ }
+
+ .heading{
+    font-weight: 200;
+    opacity: 50%;
+    padding: 7px;
+    text-align: center;
+ }
+
+ .heading:hover{
+    cursor: pointer;
+ }
+
+ /*BOTON COLECCION*/
+
+ .coleccion-cta{
+    display: flex;
+    justify-content: center;
+    margin: -130px 0 80px;
+ }
+
+ .btn-coleccion-global{
+    padding: 14px 36px;
+    border-radius: 999px;
+    background: var(--color-ciruelo);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .5px;
+    transition: transform .2s ease, box-shadow .2s ease;
+ }
+
+ .btn-coleccion-global:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+ }
+
+ /*SECCION PRODUCTOS*/
+ 
+ .product_card{
+    display: flex;
+    height: 100vh;
+    margin-top: -30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: var(--padding-document);
+ }
+
+ .card_compra{
+    width: 250px;
+    height: auto;
+    min-height: 254px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0,0.24);
+ }
+
+ .card-img img{
+    background-color: #ffcaa6;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5em;
+    transition: .3s ease;
+ }
+
+ .card-info{
+    padding-top: 10px;
+ }
+
+ .card-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd; /*linea visible*/
+ }
+
+ /*TEXTO*/
+
+ .text-title{
+    font-weight: 900;
+    font-size: 1.05em;
+    line-height: 1.3;
+    margin-bottom: 8px 0 6px;
+ }
+
+ .text-body{
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0;
+ }
+
+ .card-img:hover{
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px,
+     rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+ }
+
+ .card_compra::after{
+    content: "Agregar al carro";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: var(--color-ciruelo);
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    opacity: 0;
+ }
+ 
+ .card_compra:hover::after{
+    bottom: 0;
+    opacity: 1;
+ }
+
+ .card_compra:active{
+    transform: scale(0.98);
+ }
+ .card_compra:active::after{
+    text-align: center;
+    content: "Agregado!";
+    height: 3.125em;
+ }
+
+ /*FORMULARIO*/
+
+ .contact {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .form-container{
+   max-width: 700px;
+   background-color: white;
+   padding: 30px;
+   border-left: 5px solid var(--secondary-color);
+   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px),calc(100% - 20px) 100%, 0 100%);
+ }
+
+ .heading-text{
+   display: block;
+   color: black;
+   font-size: 1.5em;
+   font-weight: 800;
+   margin-bottom: 20px;
+ }
+
+ .form-container .form .input{
+   color: black;
+   width: 100%;
+   background-color: var(--principal-color);
+   border: none;
+   outline: none;
+   padding: 10px;
+   margin-bottom: 20px;
+   font-weight: 20px;
+   transition: all 0.2s ease-in-out;
+   border-left: 1px solid transparent;
+ }
+
+ .form-container .form .input:focus{
+   border-left: 5px solid var(--secondary-color);
+ }
+
+ .form-container .form .textarea{
+   width: 100%;
+   padding: 10px;
+   border: none;
+   outline: none;
+   background-color: var(--principal-color);
+   color: var(--secondary-color);
+   font-weight: bold;
+   resize: none;
+   max-height: 150px;
+   margin-bottom: 20px;
+   border-left: 1px solid transparent;
+   transition: all 0.2s ease-in-out;
+ }
+
+ .form-container .form .textarea:focus{
+   border-left: 5px solid var(--secondary-color);
+ }
+
+ .form-container .form .btn-container{
+   display: flex;
+   gap: 10px;
+ }
+
+ .form-container .form .btn-container a{
+   text-decoration: none;
+   color: white;
+ }
+
+ .form-container .form .btn-container a:hover{
+   color: black;
+ }
+
+ .form-container .form .btn-container .send-button{
+   flex-basis: 100%;
+   background: var(--secondary-color);
+   padding: 10px;
+   font-weight: bold;
+   border: 1px solid transparent;
+   transition: transform .2s ease, box-shadow .2s ease;
+   cursor: pointer;
+ }
+
+ .form-container .form .btn-container .send-button:hover{
+   transform: translateY(-2px);
+   box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+   border: 1px solid var(--secondary-color);
+ }
+
+ .footer .redes{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin: 10px;
+ }
+ .footer .redes img{
+   width: 25px;
+   align-items: center;
+ }
+
+ .footer .footer-msng{
+   text-align: center;
+   margin: 10px;
+ }
+
+ @media (max-width: 600px){
+   header{
+      position: absolute;
+      height: auto;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px 16px;
+   }
+
+   .nav-home{
+      display: none;
+   }
+
+   .header-logo img{ width: 52px;}
+   .text-logo{ line-height: 1.1;}
+
+   main .ban{
+      height: auto;
+      min-height: 100vh;
+      padding-top: 70px;
+   }
+
+   main .content-text-main{
+      float: none;
+      margin-left: 0;
+      width: 100%;
+      margin-top: 150px;
+   }
+
+   main .text-main{
+      margin-top: 0;
+      padding: 16px;
+   }
+
+   main .text-main .gallumbos{ font-size: 44px; }
+   main .text-main .ciruelo{
+      font-size: 28px;
+      margin-top: -10px;
+   }
+
+   main .text-main .descripcion{ font-size: 16px; }
+
+   main .text-main .btn-coleccion{
+      width: 100%;
+      max-width: 260px;
+      height: 46px;
+   }
+
+   /*NOSOTROS*/
+   main .text-aboutme{
+      margin-top: 24px;
+      margin-bottom: 0;
+      gap: 10px;
+   }
+
+   main .about-me{
+      flex-direction: column;
+      height: auto;
+      gap: 14px;
+   }
+
+   main .frase{
+      height: auto;
+      font-size: 16px;
+      padding-bottom: 16px;
+   }
+
+   main .frase-two{ height: auto; }
+   main .frase p{ font-size: 16px; }
+   /*COLECCION*/
+
+   main .colection{
+      height: auto;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 0;
+   }
+
+   .card{
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+   }
+
+   .card-image img { height: 160px; }
+
+   .coleccion-cta{
+      margin: 20px 0 40px;
+   }
+
+   /*PRODUCTOS*/
+
+   .product_card{
+      height: auto;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 0;
+      padding: 20px 16px 40px;
+   }
+
+   .card_compra{
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+   }
+
+   .card_compra::after{
+      width: 95%;
+      left: 0;
+   }
+
+   /*CONTACTO*/
+
+   .contact{
+      height: auto;
+      padding: 40px 16px;
+      align-items: stretch;
+   }
+
+   .form-container{
+      width: 100%;
+      max-width: 100%;
+      padding: var(--padding-document);
+   }
+}
+
+@media (max-width: 768px ){
+   header{
+      position: absolute;
+      height: auto;
+      align-items: center;
+      justify-content: flex-start;
+      padding: var(--padding-document);
+   }
+
+   .nav-home{
+      display: none;
+   }
+
+   .header-logo img{ width: 52px; }
+   .text-logo{ line-height: 1.1; }
+
+   main .ban{
+      height: auto;
+      min-height: 100vh;
+      padding-top: 40px;
+   }
+
+   main .content-text-main{
+      float: none;
+      margin-left: 0;
+      width: 100%;
+      margin-top: 150px;
+   }
+
+   main .text-main{
+      margin-top: 0;
+      padding: 16px;
+   }
+
+   main .text-main .gallumbos{font-size: 55px;}
+   main .text-main .ciruelo{
+      font-size: 32px;
+      margin-top: -10px;
+   }
+
+   main .text-main .descripcion{
+      font-size: 18px;
+   }
+
+   main .text-main .btn-coleccion{
+      width: 100%;
+      max-width: 260px;
+      height: 46px;
+   }
+
+   /*NOSOTROS*/
+
+   main .text-aboutme{
+      margin-top: 24px;
+      margin-bottom: 0;
+      gap: 10px;
+   }
+
+   main .about-me{
+      flex-direction: column;
+      height: auto;
+      gap: 14px;
+   }
+
+   main .frase{
+      height: auto;
+      font-size: 16px;
+      padding-bottom: 16px;
+   }
+
+   main .frase-two{ height: auto; }
+   main .frase p{ font-size: 16px; }
+
+   /*COLECCION*/
+
+   main .colection{
+      height: auto;
+      flex-direction:column;
+      gap: 16px;
+      margin-top: 0;
+   }
+
+   .card{
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+   }
+
+   .card-image img{ height: 160px;}
+
+   .coleccion-cta{
+      margin: var(--padding-document);
+   }
+
+   /*PRODUCTOS*/
+
+   .product_card{
+      height: auto;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 0;
+      padding: var(--padding-document);
+   }
+
+   .card_compra{
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+   }
+
+   .card_compra::after{
+      width: 95%;
+      left: 0;
+   }
+
+   /*CONTACTO*/
+
+   .contact{
+      height: auto;
+      padding: var(--padding-document);
+      align-items: stretch;
+   }
+
+   .form-container{
+      width: 100%;
+      max-width: 100%;
+      padding: var(--padding-document);
+   }
 }

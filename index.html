@@ -1,46 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     </style>
     <title>Document</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-logo">
-            <img src="./Assets/logo.webp" alt="logo-gallumbo-ciruelo">
-            <div class="text-logo">
-                <span class="linea">Gallumbos</span>
-                <span class="ciruelo">Ciruelo</span>
-            </div>
+      <div class="header-logo">
+        <img src="./Assets/logo.webp" alt="logo-gallumbo-ciruelo" />
+        <div class="text-logo">
+          <span class="linea">Gallumbos</span>
+          <span class="ciruelo">Ciruelo</span>
         </div>
-        <div class="nav-home">
-            <nav>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Colección</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Sobre nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
+      </div>
+      <div class="nav-home">
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#coleccion">Colección</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="ban">
-            <div class="content-text-main">
-            <div class="text-main">
-                <span class="gallumbos">Gallumbos</span>
-                <span class="ciruelo">Ciruelo</span>
-                <span class="descripcion">Estilo y comodidad para él</span>
+      <section class="ban" id="inicio">
+        <div class="content-text-main">
+          <div class="text-main">
+            <span class="gallumbos">Gallumbos</span>
+            <span class="ciruelo">Ciruelo</span>
+            <span class="descripcion">Estilo y comodidad para él</span>
+            <a href="#coleccion"><button class="btn-coleccion">Ver Colección</button></a>
+          </div>
+        </div>
+      </section>
+      <hgroup class="text-aboutme" id="nosotros">
+        <h1><span>SOBRE NOSOTROS</span></h1>
+        <span><strong>una parte de nosotros</strong></span>
+      </hgroup>
+      <section class="about-me">
+        <article class="frase frase-one">
+          <h1>"</h1>
+          <p>
+            Gallumbos Ciruelo es una marca de ropa interior que nace con un
+            objetivo claro: ofrecer comodidad, calidad y personalidad en una
+            prenda esencial del día a día. Creemos que la ropa interior no solo
+            debe sentirse bien, sino también representar la actitud y el estilo
+            de quien la lleva.
+          </p>
+        </article>
+        <article class="frase frase-two">
+          <h1>"</h1>
+          <p>
+            Nuestra marca está dirigida a un público moderno, joven y adulto,
+            que valora tanto el confort como el diseño y busca productos
+            duraderos, funcionales y con identidad propia. Personas que
+            entienden que la ropa interior es la base de cualquier outfit y que
+            no quieren renunciar a la calidad ni al carácter.
+          </p>
+        </article>
+        <article class="frase frase-three">
+          <h1>"</h1>
+          <p>
+            Lo que diferencia a Gallumbos Ciruelo de otras marcas es su
+            equilibrio entre diseño y comodidad, junto con una identidad fresca
+            y cercana. Apostamos por materiales seleccionados, cortes pensados
+            para el uso diario y una comunicación honesta, sin artificios, que
+            conecta con quienes buscan una marca auténtica, actual y con
+            personalidad.
+          </p>
+        </article>
+      </section>
+      <hgroup class="text-aboutme" id="coleccion">
+        <h1><span>Nuestra Colección</span></h1>
+        <span class="descubre"><strong>Descubre nuestra variedad</strong></span>
+      </hgroup>
+      <section class="colection">
+        <article class="card">
+            <div class="card-image"><img src="./Assets/classic.webp" alt=""></div>
+            <div class="category"><span>Boxer Clasicos</span></div>
+            <div class="heading"><span>Comodidad y estilo</span></div>
+        </article>
+        <article class="card">
+            <div class="card-image"><img src="./Assets/boxerAjustados.webp" alt=""></div>
+            <div class="category"><span>Boxer Ajustados</span></div>
+            <div class="heading"><span>Comodidad y estilo</span></div>
+        </article>
+        <article class="card">
+            <div class="card-image"><img src="./Assets/boxerslip.webp" alt=""></div>
+            <div class="category"><span>Calzoncillo slip</span></div>
+            <div class="heading"><span>Comodidad y estilo</span></div>
+        </article>
+        <article class="card">
+            <div class="card-image"><img src="./Assets/pack.webp" alt=""></div>
+            <div class="category"><span>Pack divertido</span></div>
+            <div class="heading"><span>Comodidad y estilo</span></div>
+        </article>
+      </section>
+      <div class="coleccion-cta">
+        <a href="#productos" class="btn-coleccion-global">
+            Ver todos los productos
+        </a>
+      </div>
+      <hgroup class="text-aboutme" id="productos">
+        <h1><span>Nuestros Productos</span></h1>
+        <span class="descubre"><strong>Descubre nuestra variedad</strong></span>
+      </hgroup>
+      <section class="product_card">
+        <article class="card_compra">
+            <div class="card-img"><img src="./Assets/p1.webp" alt=""></div>
+            <div class="card-info">
+                <p class="text-title">Boxer Clasicos</p>
+                <p class="text-body">Comodidad clásica con un ajuste ligero y tejido suave para el día a día.</p>
             </div>
+            <div class="card-footer">
+                <span class="text-title"><Strong>14.99€</Strong></span>
             </div>
-        </section>
+        </article>
+        <article class="card_compra">
+            <div class="card-img"><img src="./Assets/p2.webp" alt=""></div>
+            <div class="card-info">
+                <p class="text-title">Calzoncillo Slip</p>
+                <p class="text-body">Ajuste cómodo y sujeción perfecta para el día a día.</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title"><Strong>8.99€</Strong></span>
+            </div>
+        </article>
+        <article class="card_compra">
+            <div class="card-img"><img src="./Assets/p3.webp" alt=""></div>
+            <div class="card-info">
+                <p class="text-title">Boxer Ajustados</p>
+                <p class="text-body">Ajuste perfecto y comodidad que se adapta a tu cuerpo.</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title"><Strong>20€</Strong></span>
+            </div>
+        </article>
+        <article class="card_compra">
+            <div class="card-img"><img src="./Assets/p4.webp" alt=""></div>
+            <div class="card-info">
+                <p class="text-title">Boxer Clasicos</p>
+                <p class="text-body">Tejido transpirable y comodidad que se nota desde el primer uso.</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title"><Strong>18€</Strong></span>
+            </div>
+        </article>
+        <article class="card_compra">
+            <div class="card-img"><img src="./Assets/p1.webp" alt=""></div>
+            <div class="card-info">
+                <p class="text-title">Pack de boxer clasicos</p>
+                <p class="text-body">3 boxer de algodon</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title"><Strong>35€</Strong></span>
+            </div>
+        </article>
+      </section>
+      <hgroup class="text-aboutme" id="contacto">
+        <h1><span>Contactanos</span></h1>
+        <span class="descubre"><strong>¿Quieres preguntarnos algo?</strong></span>
+      </hgroup>
+      <section class="contact">
+        <Article class="form-container">
+          <form action="" class="form">
+            <span class="heading-text">Rellena el formulario</span>
+            <input type="text" class="input" placeholder="Escribe tu nombre">
+            <input type="email" id="mail" placeholder="Escribe tu correo" class="input">
+            <select name="opcion" id="opcion" class="input">
+              <option value="0">Elige el motivo</option>
+              <option value="1">Pedidos</option>
+              <option value="2">Devoluciones</option>
+              <option value="3">Trabaja con nosotros</option>
+            </select>
+            <textarea id="message" name="message" class="textarea" placeholder="Escribe tu mensaje" rows="10" cols="30"></textarea>
+            <div class="btn-container">
+              <button class="send-button"><a href="">Enviar</a></button>
+            </div>
+          </form>
+        </Article>
+      </section>
     </main>
-</body>
+    <footer class="footer">
+        <hr class="footer-fn">
+        <h4 class="footer-msng">&#169Portafolio creado personalmente para un proyecto en The Power</h4>
+        <h5 class="footer-msng">Gallumbos Ciruelo 2025</h5>
+        <section class="redes">
+          <img src="./Assets/linkedin.svg" alt="">
+          <img src="./Assets/instagram.svg" alt="">
+          <img src="./Assets/github-mark.svg" alt="">
+        </section>
+    </footer>
+  </body>
 </html>
