@@ -3,7 +3,6 @@
     --color-ciruelo: #660066;
     --principal-color: #FBF4E6;
     --secondary-color: #7A1F3D;
-    --size-font: 15px;
     --principal-font: "Inter", sans-serif;
     --secondary-font: "Playfair Display", serif;
     --weigth-font: 600;
@@ -81,7 +80,8 @@ main > .ban {
 
 main .content-text-main{
     float: left;
-    margin-left: 5%;
+    margin-left: 15%;
+    margin-top: 50px;
 }
 
 main .text-main{
@@ -139,23 +139,27 @@ main .about-me{
 }
 
 main .frase{
+   display: grid;
     background-color: var(--secondary-color);
     text-align: center;
     font-size: 20px;
     border-radius: 10px;
-    height: 350px;
+    height: auto;
+    padding: 15px;
 }
 
 main .frase-two{
-    height: 400px;
+    height: auto;
+    padding: 25px;
 }
  main .frase p{
     padding: 0px 20px 0px 20px;
-    font-size: 20px;
+    font-size: 25px;
  }
 
  main .frase h1{
     margin-top: 15px;
+    margin-bottom: -30px;
     font-family: "Passion One", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -176,6 +180,7 @@ main .frase-two{
 
  .text-aboutme .descubre{
     color: var(--secondary-color);
+    font-size: 30px;
  }
 
  main .colection{
@@ -329,7 +334,7 @@ main .frase-two{
     background: var(--color-ciruelo);
     color: #fff;
     height: 2.5em;
-    width: 90%;
+    width: 93%;
     transition: all 80ms;
     font-weight: 600;
     font-size: 15px;
@@ -712,4 +717,109 @@ main .frase-two{
       max-width: 100%;
       padding: var(--padding-document);
    }
+}
+
+@media (max-width: 992px){
+   header{
+      position: absolute;
+      height: auto;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--padding-document);
+   }
+
+   .nav-home{
+      display: none;
+   }
+
+   main .content-text-main{
+      margin-left: 0;
+      width: 100%;
+      margin-top: 200px;
+   }
+
+   /* NOSOTROS */
+
+   main .text-aboutme{
+      margin-top: 24px;
+      margin-bottom: 0;
+      gap: 10px;
+   }
+
+   main .about-me{
+      flex-direction: column;
+      height: auto;
+      gap: 15px;
+   }
+
+   main .frase{
+      height: auto;
+      font-size: 16px;
+      padding-bottom: 16px;
+   }
+
+   main .frase-two{ height: auto;}
+   main .frase p{ font-size: 25px;}
+
+   /*COLECCION*/
+
+   main .colection{
+      height: auto;
+      flex-wrap: wrap;   
+      gap: 16px;
+      margin-top: 0;
+   }
+
+   .card{
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+   }
+
+   .card-image img{ height: 160px; }
+
+   .coleccion-cta{
+      margin:20px
+   }
+
+   /*PRODUCTOS*/
+
+   .product_card{
+      height: auto;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 0;
+      padding: var(--padding-document);
+   }
+
+   .card_compra{
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+   }
+
+   .card_compra::after{
+      width: 95%;
+      left: 0;
+   }
+
+   /*CONTACTO*/
+
+   .contact{
+      height: auto;
+      padding: var(--padding-document);
+      align-items: stretch;
+   }
+
+   .form-container{
+      width: 100%;
+      max-width: 100%;
+      padding: var(--padding-document);
+   }
+
+
+
+
+
+
 }
